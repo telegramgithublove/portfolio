@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Портфолио и Резюме - Вадим Янюшкин</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Вадим Янюшкин - Middle Frontend Vue.js 3 - разработчик</h1>
+        <p>Создаю современные веб-приложения</p>
+    </header>
+
+    <nav>
+        <a href="#summary">Краткое описание</a>
+        <a href="#experience">Опыт работы</a>
+        <a href="#skills">Навыки</a>
+        <a href="#projects">Портфолио/Проекты</a>
+        <a href="#education">Образование</a>
+        <a href="#contacts">Контакты</a>
+    </nav>
+
+    <section id="summary" class="section-animate">
+        <h2>Краткое описание</h2>
+        <p>
+            <strong>Кто я?</strong> Middle Frontend-разработчик с 4 годами опыта.<br>
+            <strong>Специализация:</strong> Создание масштабируемых приложений на <strong>Vue.js 3</strong>, <strong>Nuxt.js 3</strong>,  <strong>JavaScript</strong> и <strong>TypeScript</strong>.<br>
+            <strong>Навыки:</strong> Работа с микросервисной архитектурой, базами данных (<strong>MySQL</strong>, <strong>MariaDB</strong>, <strong>Appwrite</strong>) и процессами <strong>CI/CD</strong>.<br>
+            <strong>Цель:</strong> Разработка высоконагруженных систем в динамичной команде или самостоятельная работа над продуктами.<br>
+            <strong>Методологии:</strong> Владею <strong>Waterfall</strong>, <strong>Agile</strong>, <strong>Scrum</strong> и <strong>DevOps</strong> (инструменты: <strong>Docker</strong>).<br>
+            <strong>Режим работы:</strong> Готов к полной занятости или гибкому графику, использую <strong>ИИ</strong> для ускорения разработки.
+        </p>
+    </section>
+
+    <section id="experience" class="section-animate">
+        <h2>Опыт работы</h2>
+        <div class="experience-card">
+            <h3>ООО "МОНО", Самара</h3>
+            <p><strong>Период</strong>: апрель 2015 – апрель 2018</p>
+            <p><strong>Должность</strong>: Программист JavaScript</p>
+            <p><strong>Описание</strong>: Разработка интернет-магазина для ролевой игры "INSOMNIA: The Ark" на JavaScript.</p>
+            <p><a href="https://store.steampowered.com/app/783170/INSOMNIA_The_Ark/?l=russian" target="_blank">Ссылка на проект</a></p>
+        </div>
+        <div class="experience-card">
+            <h3>ИП "Янюшкин Вадим Евгеньевич" / IT-компания "Osprey-it", Самара</h3>
+            <p><strong>Период</strong>: март 2018 – декабрь 2021</p>
+            <p><strong>Должность</strong>: Разработчик программного обеспечения (Freelance)</p>
+            <p><strong>Описание</strong>: Разработка веб-приложений с использованием Vue.js, работа над SEO-оптимизацией.</p>
+        </div>
+        <div class="experience-card">
+            <h3>My YouTube Teacher Project, Самара</h3>
+            <p><strong>Период</strong>: декабрь 2021 – по настоящее время</p>
+            <p><strong>Должность</strong>: Vue.js Developer</p>
+            <p><strong>Описание</strong>: Ведение YouTube-канала с ежедневными уроками по Vue.js 3 и другим технологиям.</p>
+            <p><a href="https://www.youtube.com/@justinmoreyl18" target="_blank">YouTube-канал</a></p>
+        </div>
+        <div class="experience-card">
+            <h3>AnimeLight Forum (собственный проект), Самара</h3>
+            <p><strong>Период</strong>: по настоящее время</p>
+            <p><strong>Описание</strong>: Разработка готового веб-приложения с использованием Vue 3 (Composition API), Vuex 4, Firebase и TailwindCSS. Проект включает функционал для монетизации и перспективу внедрения маркетплейса с использованием криптовалют.</p>
+            <p><strong>Технологии</strong>: Vue 3 (Composition API), Vuex 4, Firebase, TailwindCSS</p>
+            <p><a href="https://animelights.onrender.com" target="_blank">Сайт</a> | <a href="https://t.me/animelightsforum" target="_blank">Telegram</a> | <a href="https://drive.google.com/file/d/18bk-6PQrq0ua262J-TSD7o9IDnWxrzVM/view" target="_blank">Демо</a> | <a href="https://youtu.be/FNgbs8kc544" target="_blank">YouTube</a></p>
+            <button class="offer-btn pulse-glow" onclick="openModal('animelight')">Коммерческое предложение</button>
+        </div>
+        <div class="experience-card">
+            <h3>New Forum (собственный проект), Самара</h3>
+            <p><strong>Период</strong>: по настоящее время</p>
+            <p><strong>Описание</strong>: Аналог AnimeLight Forum, адаптированный под российские сервисы из-за ограничений SWIFT. Создан для объединения фанатов аниме и поп-культуры.</p>
+            <p><strong>Технологии</strong>: Nuxt 3, Pinia 3, Appwrite, TailwindCSS</p>
+            <p><a href="https://youtu.be/XKRFM8bFOSk" target="_blank">YouTube-демо</a></p>
+            <button class="offer-btn pulse-glow" onclick="openModal('newforum')">Коммерческое предложение</button>
+        </div>
+        <div class="experience-card">
+            <h3>Разработка Telegram-ботов (Freelance), Самара</h3>
+            <p><strong>Период</strong>: по настоящее время</p>
+            <p><strong>Описание</strong>: Создание Telegram-ботов любой сложности с использованием Telegraf.js и Appwrite. Быстрая разработка по вашему ТЗ.</p>
+            <p><strong>Технологии</strong>: Telegraf.js, Appwrite</p>
+            <p><strong>Примеры ботов</strong>: <a href="https://t.me/onlyloversbot" target="_blank">@onlyloversbot</a>, <a href="https://t.me/IPISXXXbot" target="_blank">@IPISXXXbot</a>, <a href="https://t.me/IPISXXXrecordbot" target="_blank">@IPISXXXrecordbot</a></p>
+            <button class="price-btn pulse-glow" onclick="openModal('botpricing')">Цены на разработку ботов</button>
+        </div>
+    </section>
+
+    <section id="skills" class="section-animate">
+        <h2>Навыки</h2>
+        <div class="skills-list">
+            <span class="skill-item">JavaScript</span>
+            <span class="skill-item">TypeScript</span>
+            <span class="skill-item">Vue.js 3</span>
+            <span class="skill-item">Nuxt.js 3</span>
+            <span class="skill-item">CSS 3</span>
+            <span class="skill-item">Vuex</span>
+            <span class="skill-item">Pinia 3</span>
+            <span class="skill-item">Git</span>
+            <span class="skill-item">MySQL</span>
+            <span class="skill-item">MariaDB</span>
+            <span class="skill-item">Appwrite</span>
+            <span class="skill-item">Composition API</span>
+            <span class="skill-item">Vite</span>
+            <span class="skill-item">Firebase</span>
+            <span class="skill-item">TailwindCSS</span>
+            <span class="skill-item">Telegraf.js</span>
+        </div>
+    </section>
+
+    <section id="projects" class="section-animate">
+        <h2>Портфолио/Проекты</h2>
+        <div class="project-card">
+            <h3>AnimeLight Forum</h3>
+            <p>Веб-приложение на Vue 3 (Composition API) с Vuex 4, Firebase и TailwindCSS. Реализован функционал монетизации и планы по внедрению криптовалютного маркетплейса.</p>
+            <a href="https://animelights.onrender.com" target="_blank">Ссылка на сайт</a>
+            <button class="offer-btn pulse-glow" onclick="openModal('animelight')">Коммерческое предложение</button>
+        </div>
+        <div class="project-card">
+            <h3>My YouTube Teacher Project</h3>
+            <p>YouTube-канал с ежедневными уроками по Vue.js 3 и другими технологиями.</p>
+            <a href="hhttps://www.youtube.com/@justinmoreyl18" target="_blank">Ссылка на YouTube</a>
+            <button class="details-btn" onclick="openModal('youtube')">Подробнее</button>
+        </div>
+        <div class="project-card">
+            <h3>New Forum</h3>
+            <p>Аналог AnimeLight Forum на Nuxt 3, Pinia 3, Appwrite и TailwindCSS, адаптированный под российские сервисы.</p>
+            <a href="https://youtu.be/XKRFM8bFOSk" target="_blank">YouTube-демо</a>
+            <button class="offer-btn pulse-glow" onclick="openModal('newforum')">Коммерческое предложение</button>
+        </div>
+        <div class="project-card">
+            <h3>Разработка Telegram-ботов</h3>
+            <p>Создание Telegram-ботов любой сложности с использованием Telegraf.js и Appwrite.</p>
+            <p><strong>Примеры ботов</strong>: <a href="https://t.me/onlyloversbot" target="_blank">@onlyloversbot</a>, <a href="https://t.me/IPISXXXbot" target="_blank">@IPISXXXbot</a>, <a href="https://t.me/IPISXXXrecordbot" target="_blank">@IPISXXXrecordbot</a></p>
+            <button class="price-btn pulse-glow" onclick="openModal('botpricing')">Цены на разработку ботов</button>
+        </div>
+    </section>
+
+    <section id="education" class="section-animate">
+        <h2>Образование: Высшее</h2>
+        <p>Инженер, Самарский Государственный Аэрокосмический Университет (2001 – 2006)</p>
+    </section>
+
+    <section id="contacts" class="section-animate">
+        <h2>Контакты</h2>
+        <p>Телефон: +7 (995) 488-05-55</p>
+        <p>Email: neothematrixfights@gmail.com</p>
+        <p>YouTube: <a href="https://www.youtube.com/@justinmoreyl18" target="_blank">YouTube-канал</a></p>
+        <p>GitHub: <a href="https://github.com/ospreystudio?tab=repositories" target="_blank">github.com/ospreystudio</a></p>
+        <p>Telegram: <a href="https://t.me/elmory88" target="_blank">t.me/elmory88</a></p>
+        <p>Языки: Русский (Родной), Английский (Upper-Intermediate, B2).</p>
+    </section>
+
+    <div id="myModal" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal()">&times;</span>
+            <div id="modal-body"></div>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; Вадим Янюшкин, 2025</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
